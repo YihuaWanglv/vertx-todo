@@ -8,7 +8,7 @@ ENV VERTICLE_HOME /usr/verticles
 EXPOSE 8082
 
 COPY $VERTICLE_FILE $VERTICLE_HOME/
-COPY config/config_docker.json $VERTICLE_HOME/
+COPY config_docker.json $VERTICLE_HOME/
 
 WORKDIR $VERTICLE_HOME
 ENTRYPOINT ["sh", "-c"]
